@@ -1,4 +1,17 @@
 # Instalação dos prerequisitos
+## Tabela de Conteúdos 
+- [Instalação dos prerequisitos](#instalação-dos-prerequisitos)
+  - [Tabela de Conteúdos](#tabela-de-conteúdos)
+  - [Detalhes do sistema](#detalhes-do-sistema)
+  - [Vitis 2024.2](#vitis-20242)
+    - [Instalação](#instalação)
+    - [Troubleshoot](#troubleshoot)
+      - [Não é possível abrir o GUI do vitis](#não-é-possível-abrir-o-gui-do-vitis)
+  - [OpenCV 4.4.0 x86](#opencv-440-x86)
+    - [Instalação](#instalação-1)
+  - [Vitis Vision](#vitis-vision)
+    - [Instalação](#instalação-2)
+
 ## Detalhes do sistema
 - WSL2 com distro Ubuntu 22.04.5 LTS
 ## Vitis 2024.2
