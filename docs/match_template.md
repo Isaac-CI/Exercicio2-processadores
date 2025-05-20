@@ -12,6 +12,7 @@
   - Disponível no repositório: https://github.com/Isaac-CI/Exercicio2-processadores
   - Leia install.md e vitis_hls.md antes deste documento
   - O exemplo match_template do OpenCV foi adaptado de modo com que seja possível criar um design de um IP acelerador a partir do Vitis_HLS.
+  - Aplica apenas o método da soma dos quadrados normalizada.
   -  A biblioteca vitis vision foi utilizada para auxiliar no fluxo de desenvolvimento
   -  Validação por meio de testbench anterior à geração do IP
 
@@ -42,6 +43,26 @@ Acesse o diretório `match_template/` e execute o seguinte comando:
 Se ainda não existir, a ferramenta irá criar um diretório `hls/` onde será possível encontrar as imagens resultantes do testbench.
 
 Vale salientar que as constantes `INPUT_WIDTH`, `INPUT_HEIGHT`, `TEMPLATE_WIDTH` e `TEMPLATE_HEIGHT`, devem ser manualmente definidas de acordo com as dimensões das imagens utilizadas como input e template respectivamente.
+
+As figuras a seguir ilustram o resultado obtido a partir do testbench.
+
+![Imagem de entrada](images/input.jpg)
+
+**Figura 1: Imagem de entrada**
+
+![Imagem template](images/template.jpg)
+
+**Figura 1: Imagem template**
+
+
+![Imagem resultado](images/output_result.png)
+
+**Figura 1: Resultado do uso do IP**
+
+
+![Imagem marcada](images/output_marked.png)
+
+**Figura 1: Área da imagem original selecionada pelo IP**
 
 ### Síntese
 Acesse o diretório `match_template/` e execute o seguinte comando: 

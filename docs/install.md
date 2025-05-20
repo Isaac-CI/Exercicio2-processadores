@@ -25,12 +25,12 @@
     # ./FPGAs_AdaptiveSoCs_Unified_2024.2_1113_1001_Lin64.bin
    ```
 3. Seguir o passo a passo do wizard de instalação:
-   1. Faça o login na sua conta da AMD e selecione a opção `Download and Intall Now` ![imagem da etapa de login da instalação](/docs/images/login.png)
-   2. Selecione o vitis como produto a ser instalado ![imagem da etapa de seleção da instalação](/docs/images/select.png)
-   3. Customise sua instalação com as ferramentas necessárias. Pelo menos um device deve ser selecionado. ![imagem da etapa de seleção das ferramentas](/docs/images/tools.png)
-   4. Aceite todos os termos e condições requeridos ![imagem da etapa de aceite dos termos e condições](/docs/images/terms.png)
-   5. Defina o caminho de instalação ![imagem da etapa de definição do caminho de instalação](/docs/images/path.png)
-   6. Revise as informações de instalação, clique em install e espere a instalação terminar. ![imagem da etapa de definição do caminho de instalação](/docs/images/info.png)
+   1. Faça o login na sua conta da AMD e selecione a opção `Download and Intall Now` ![imagem da etapa de login da instalação](images/login.png)
+   2. Selecione o vitis como produto a ser instalado ![imagem da etapa de seleção da instalação](images/select.png)
+   3. Customise sua instalação com as ferramentas necessárias. Pelo menos um device deve ser selecionado. ![imagem da etapa de seleção das ferramentas](images/tools.png)
+   4. Aceite todos os termos e condições requeridos ![imagem da etapa de aceite dos termos e condições](images/terms.png)
+   5. Defina o caminho de instalação ![imagem da etapa de definição do caminho de instalação](images/path.png)
+   6. Revise as informações de instalação, clique em install e espere a instalação terminar. ![imagem da etapa de definição do caminho de instalação](images/info.png)
 4. Instale as bibliotecas necessárias pelo script `installLibs.sh`
    ```
    $ cd <path_to_vitis_2024.2>/scripts
