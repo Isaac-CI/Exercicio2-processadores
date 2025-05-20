@@ -1,0 +1,16 @@
+In file included from src/match_template.cpp:1:
+In file included from src/match_template.hpp:5:
+In file included from /tools/Xilinx/Vitis/2024.2/Vitis_Libraries/vision/L1/include/common/xf_utility.hpp:23:
+/tools/Xilinx/Vitis/2024.2/Vitis_Libraries/vision/L1/include/common/xf_video_mem.hpp:759:47: warning: 'factor' in '#pragma HLS array_reshape' is ignored [-Wextra-tokens]
+#pragma HLS ARRAY_RESHAPE variable=val factor=RESHAPE_FACTOR dim=1
+                                              ^
+src/match_template.cpp:6:34: warning: Unsupported interface port data type in '#pragma HLS interface m_axi' [-Wignored-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=img_in offset=slave bundle=gmem
+                                 ^
+src/match_template.cpp:7:34: warning: Unsupported interface port data type in '#pragma HLS interface m_axi' [-Wignored-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=img_template offset=slave bundle=gmem
+                                 ^
+src/match_template.cpp:8:34: warning: Unsupported interface port data type in '#pragma HLS interface m_axi' [-Wignored-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=img_out offset=slave bundle=gmem
+                                 ^
+4 warnings generated.

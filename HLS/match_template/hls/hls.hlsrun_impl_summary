@@ -1,0 +1,270 @@
+<ENTRY>
+{
+ "thisFile": "/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue May 20 06:14:04 2025",
+ "timestampMillis": "1747732444378",
+ "buildStep": {
+  "cmdId": "dc1fadaa-0cfe-4261-8254-296c9e0e5a25",
+  "name": "vitis-run",
+  "logFile": "/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/logs/hls.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --config /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg --impl --work_dir hls --part xc7s25csga324-1 ",
+  "args": [
+   "--mode",
+   "hls",
+   "--config",
+   "/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg",
+   "--impl",
+   "--work_dir",
+   "hls",
+   "--part",
+   "xc7s25csga324-1"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 20 06:14:04 2025",
+ "timestampMillis": "1747732444378",
+ "status": {
+  "cmdId": "dc1fadaa-0cfe-4261-8254-296c9e0e5a25",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue May 20 06:14:07 2025",
+ "timestampMillis": "1747732447292",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "match_template",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/src/match_template.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue May 20 06:14:07 2025",
+ "timestampMillis": "1747732447293",
+ "buildStep": {
+  "cmdId": "86c45f82-cc2e-4bea-b02f-1c6741d12a4e",
+  "name": "",
+  "logFile": "/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 20 06:14:07 2025",
+ "timestampMillis": "1747732447293",
+ "status": {
+  "cmdId": "86c45f82-cc2e-4bea-b02f-1c6741d12a4e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 06:14:07 2025",
+ "timestampMillis": "1747732447294",
+ "report": {
+  "path": "/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/impl/verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 06:14:07 2025",
+ "timestampMillis": "1747732447294",
+ "report": {
+  "path": "/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/impl/report/verilog/export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 06:14:07 2025",
+ "timestampMillis": "1747732447295",
+ "report": {
+  "path": "/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/impl/report/verilog/export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 06:14:07 2025",
+ "timestampMillis": "1747732447295",
+ "report": {
+  "path": "/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/impl/verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 06:14:07 2025",
+ "timestampMillis": "1747732447296",
+ "report": {
+  "path": "/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/impl/report/verilog/export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 06:14:07 2025",
+ "timestampMillis": "1747732447296",
+ "report": {
+  "path": "/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/impl/report/verilog/export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 06:17:39 2025",
+ "timestampMillis": "1747732659966",
+ "report": {
+  "path": "/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 06:17:39 2025",
+ "timestampMillis": "1747732659967",
+ "report": {
+  "path": "/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 20 06:17:39 2025",
+ "timestampMillis": "1747732659967",
+ "status": {
+  "cmdId": "86c45f82-cc2e-4bea-b02f-1c6741d12a4e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue May 20 06:17:40 2025",
+ "timestampMillis": "1747732660096",
+ "status": {
+  "cmdId": "dc1fadaa-0cfe-4261-8254-296c9e0e5a25",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 06:17:40 2025",
+ "timestampMillis": "1747732660097",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue May 20 06:17:40 2025",
+ "timestampMillis": "1747732660097",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

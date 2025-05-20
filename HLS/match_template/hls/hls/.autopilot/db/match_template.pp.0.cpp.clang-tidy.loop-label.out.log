@@ -1,0 +1,332 @@
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:2257:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:2257:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:2271:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:2271:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:2285:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:2285:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:3919:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:3919:7: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18300:2: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < N; k++) {
+ ^~~
+ VITIS_LOOP_307_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18300:2: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18314:5: warning: Added loop label VITIS_LOOP_321_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_321_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18314:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18329:5: warning: Added loop label VITIS_LOOP_336_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_336_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18329:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18344:5: warning: Added loop label VITIS_LOOP_351_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_351_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18344:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18359:5: warning: Added loop label VITIS_LOOP_366_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_366_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18359:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18374:5: warning: Added loop label VITIS_LOOP_381_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_381_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18374:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18389:5: warning: Added loop label VITIS_LOOP_396_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_396_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18389:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18404:5: warning: Added loop label VITIS_LOOP_411_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_411_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18404:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18419:5: warning: Added loop label VITIS_LOOP_426_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_426_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18419:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18496:9: warning: Added loop label VITIS_LOOP_511_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < (rows * ((cols + NPC - 1) >> xfNPixelsPerCycle<NPC>::datashift)); ++i) {
+        ^~~
+        VITIS_LOOP_511_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18496:9: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18704:5: warning: Added loop label VITIS_LOOP_719_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_719_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18704:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18705:9: warning: Added loop label VITIS_LOOP_720_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < packcols; c++) {
+        ^~~
+        VITIS_LOOP_720_2: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18705:9: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18706:13: warning: Added loop label VITIS_LOOP_721_3:   [xilinx-label-all-loops]
+            for (int p = 0; p < nppc; p++) {
+            ^~~
+            VITIS_LOOP_721_3: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18706:13: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18708:17: warning: Added loop label VITIS_LOOP_723_4:   [xilinx-label-all-loops]
+                for (int ch = 0; ch < DataType<T, NPPC>::channel; ch++) {
+                ^~~
+                VITIS_LOOP_723_4: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18708:17: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18746:5: warning: Added loop label VITIS_LOOP_761_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_761_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18746:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18747:9: warning: Added loop label VITIS_LOOP_762_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < cols; c++) {
+        ^~~
+        VITIS_LOOP_762_2: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18747:9: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18749:13: warning: Added loop label VITIS_LOOP_764_3:   [xilinx-label-all-loops]
+            for (int ch = 0; ch < DataType<T, NPPC>::channel; ch++) {
+            ^~~
+            VITIS_LOOP_764_3: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18749:13: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18750:17: warning: Added loop label VITIS_LOOP_765_4:   [xilinx-label-all-loops]
+                for (int b = 0; b < cv_nbytes; ++b) {
+                ^~~
+                VITIS_LOOP_765_4: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18750:17: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18804:5: warning: Added loop label VITIS_LOOP_819_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < rows; i++) {
+    ^~~
+    VITIS_LOOP_819_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18804:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18805:9: warning: Added loop label VITIS_LOOP_820_2:   [xilinx-label-all-loops]
+        for (int j = 0; j<cols>> (xfNPixelsPerCycle<NPPC>::datashift); j++) {
+        ^~~
+        VITIS_LOOP_820_2: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18805:9: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18813:13: warning: Added loop label VITIS_LOOP_828_3:   [xilinx-label-all-loops]
+            for (int k = 0; k < (1 << (xfNPixelsPerCycle<NPPC>::datashift)); k++) {
+            ^~~
+            VITIS_LOOP_828_3: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18813:13: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18926:9: error: Invalid Directive: for current device, mul + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable=mul_rows_cols op=mul impl=dsp latency=2
+        ^
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18998:2: warning: Added loop label VITIS_LOOP_1021_1:   [xilinx-label-all-loops]
+ for (c = 0; c < cols_addrbound; c++) {
+ ^~~
+ VITIS_LOOP_1021_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:18998:2: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:19406:13: warning: Added loop label VITIS_LOOP_1429_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1429_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:19406:13: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:19434:13: warning: Added loop label VITIS_LOOP_1457_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1457_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:19434:13: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:19464:13: warning: Added loop label VITIS_LOOP_1487_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1487_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:19464:13: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:19494:13: warning: Added loop label VITIS_LOOP_1517_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1517_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:19494:13: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20034:5: warning: Added loop label VITIS_LOOP_122_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_122_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20034:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20038:2: warning: Added loop label VITIS_LOOP_126_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS - 1; j++) {
+ ^~~
+ VITIS_LOOP_126_2: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20038:2: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20065:5: warning: Added loop label VITIS_LOOP_166_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_166_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20065:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20069:2: warning: Added loop label VITIS_LOOP_170_2:   [xilinx-label-all-loops]
+ for (j = COLS - 1; j > 0; j--) {
+ ^~~
+ VITIS_LOOP_170_2: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20069:2: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20096:5: warning: Added loop label VITIS_LOOP_210_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS - 1; i++) {
+    ^~~
+    VITIS_LOOP_210_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20096:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20100:2: warning: Added loop label VITIS_LOOP_214_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS; j++) {
+ ^~~
+ VITIS_LOOP_214_2: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20100:2: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20127:5: warning: Added loop label VITIS_LOOP_254_1:   [xilinx-label-all-loops]
+    for (i = ROWS - 1; i > 0; i--) {
+    ^~~
+    VITIS_LOOP_254_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20127:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20131:2: warning: Added loop label VITIS_LOOP_258_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS; j++) {
+ ^~~
+ VITIS_LOOP_258_2: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20131:2: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20177:5: warning: Added loop label VITIS_LOOP_330_1:   [xilinx-label-all-loops]
+    for (j = 0; j < COLS; j++) {
+    ^~~
+    VITIS_LOOP_330_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20177:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20240:5: warning: Added loop label VITIS_LOOP_435_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_435_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20240:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20437:44: error: Invalid Directive: for current device, RAM_1P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_1P impl=BRAM
+                                           ^
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20442:44: error: Invalid Directive: for current device, RAM_1P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_1P impl=URAM
+                                           ^
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20447:44: error: Invalid Directive: for current device, RAM_2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_2P impl=BRAM
+                                           ^
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20452:44: error: Invalid Directive: for current device, RAM_2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_2P impl=URAM
+                                           ^
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20457:44: error: Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_S2P impl=BRAM
+                                           ^
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20462:44: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_S2P impl=URAM
+                                           ^
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20467:44: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_T2P impl=BRAM
+                                           ^
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20472:44: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_T2P impl=URAM
+                                           ^
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20528:5: warning: Added loop label VITIS_LOOP_824_1:   [xilinx-label-all-loops]
+    for (i = ROWS - 1; i > 0; i--) {
+    ^~~
+    VITIS_LOOP_824_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20528:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20554:5: warning: Added loop label VITIS_LOOP_867_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS - 1; i++) {
+    ^~~
+    VITIS_LOOP_867_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20554:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20610:5: warning: Added loop label VITIS_LOOP_968_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_968_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20610:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20706:5: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_39_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20706:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20725:5: warning: Added loop label VITIS_LOOP_58_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_58_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20725:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20753:5: warning: Added loop label VITIS_LOOP_86_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_86_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20753:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20786:5: warning: Added loop label VITIS_LOOP_119_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_119_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20786:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20820:5: warning: Added loop label VITIS_LOOP_153_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_153_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20820:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20848:5: warning: Added loop label VITIS_LOOP_181_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_181_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20848:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20872:5: warning: Added loop label VITIS_LOOP_205_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_205_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20872:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20895:5: warning: Added loop label VITIS_LOOP_228_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < loopcount; i++) {
+    ^~~
+    VITIS_LOOP_228_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20895:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20930:5: warning: Added loop label VITIS_LOOP_263_1:   [xilinx-label-all-loops]
+    for (uint16_t r = 0; r < K_ROWS; r++) {
+    ^~~
+    VITIS_LOOP_263_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20930:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20932:2: warning: Added loop label VITIS_LOOP_265_2:   [xilinx-label-all-loops]
+ for (uint16_t c = 0; c < K_COLS; c++) {
+ ^~~
+ VITIS_LOOP_265_2: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20932:2: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20992:5: warning: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (ap_int<9> i = 0; i < loopIter; i++) {
+    ^~~
+    VITIS_LOOP_325_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:20992:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:21064:5: warning: Added loop label VITIS_LOOP_397_1:   [xilinx-label-all-loops]
+    for (i = 0; i < 6; i++, ind++) {
+    ^~~
+    VITIS_LOOP_397_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:21064:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:21135:5: warning: Added loop label VITIS_LOOP_468_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < imheight; i++) {
+    ^~~
+    VITIS_LOOP_468_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:21135:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:21140:2: warning: Added loop label VITIS_LOOP_473_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < (imwidth >> NPC); j++) {
+ ^~~
+ VITIS_LOOP_473_2: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:21140:2: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:21166:9: warning: Added loop label VITIS_LOOP_499_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_499_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:21166:9: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:21272:9: warning: Added loop label VITIS_LOOP_623_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_623_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:21272:9: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:21386:9: warning: Added loop label VITIS_LOOP_737_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_737_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:21386:9: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:21418:9: warning: Added loop label VITIS_LOOP_788_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < loop_count; i++) {
+        ^~~
+        VITIS_LOOP_788_1: 
+/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp:21418:9: note: FIX-IT applied suggested code changes

@@ -1,0 +1,1385 @@
+================================================================
+== Vivado Place & Route Results
+================================================================
++ General Information:
+    * Date:            Tue May 20 06:17:39 -03 2025
+    * Version:         2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:         hls
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  spartan7
+    * Target device:   xc7s25-csga324-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * Place & Route target clock:  3.3 ns
+    * C-Synthesis target clock:    3.3 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Place & Route Options:
+    * config_export -vivado_impl_strategy:  default
+    * config_export -vivado_phys_opt:       auto
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== Place & Route Resource Summary
+================================================================
+LUT:              3625
+FF:               3431
+DSP:              80
+BRAM:             0
+URAM:             0
+SRL:              0
+
+
+================================================================
+== Place & Route Timing Summary
+================================================================
+* Timing was NOT met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 3.300       |
+| Post-Synthesis | 6.803       |
+| Post-Route     | 6.818       |
++----------------+-------------+
+
+
+================================================================
+== Place & Route Resources
+================================================================
++------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                               | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                               | 3625 | 3431 | 80  |      |      |     |        |      |         |          |        |
+|   (inst)                           | 852  | 2055 | 36  |      |      |     |        |      |         |          |        |
+|   control_s_axi_U                  | 88   | 25   |     |      |      |     |        |      |         |          |        |
+|   flow_control_loop_pipe_U         | 3    | 1    |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U101 | 9    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U38  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U40  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U42  | 3    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U44  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U46  | 4    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U48  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U50  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U51  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U53  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U54  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U56  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U58  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U60  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U62  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U64  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U66  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U67  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U69  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U70  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U72  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U74  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U76  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U78  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U80  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U82  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U83  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U85  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U86  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U88  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U90  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U92  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U94  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U96  | 2    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U98  | 1    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_18_4_1_U99  | 9    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U100 | 1    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U39  | 4    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U41  | 3    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U43  | 3    |      | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U45  | 108  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U47  | 107  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U49  | 107  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U52  | 106  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U55  | 106  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U57  | 107  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U59  | 107  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U61  | 108  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U63  | 107  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U65  | 107  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U68  | 107  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U71  | 106  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U73  | 107  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U75  | 107  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U77  | 108  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U79  | 106  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U81  | 108  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U84  | 108  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U87  | 104  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U89  | 108  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U91  | 107  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U93  | 107  | 62   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U95  | 107  | 56   |     |      |      |     |        |      |         |          |        |
+|   mac_muladd_9s_9s_18s_19_4_1_U97  | 108  | 56   |     |      |      |     |        |      |         |          |        |
+|   mul_32ns_34ns_55_5_1_U1          | 22   |      | 4   |      |      |     |        |      |         |          |        |
++------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== Place & Route Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+---------+--------+
+| Criteria                                                  | Guideline | Actual  | Status |
++-----------------------------------------------------------+-----------+---------+--------+
+| LUT                                                       | 70%       | 24.83%  | OK     |
+| FD                                                        | 50%       | 11.75%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.00%   | OK     |
+| MUXF7                                                     | 15%       | 0.00%   | OK     |
+| DSP                                                       | 80%       | 100.00% | REVIEW |
+| RAMB/FIFO                                                 | 80%       | 0.00%   | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 100.00% | REVIEW |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0       | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0       | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0       | OK     |
+| Control Sets                                              | 274       | 144     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 2.34    | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0       | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0       | OK     |
++-----------------------------------------------------------+-----------+---------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0       | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0       | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0       | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0       | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0       | OK     |
++-----------------------------------------------------------+-----------+---------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0       | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 100     | REVIEW |
++-----------------------------------------------------------+-----------+---------+--------+
+
+
+================================================================
+== Place & Route Timing Paths
+================================================================
+* Timing was NOT met
++--------+--------+------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path   |  SLACK | STARTPOINT PIN                                                                                                   | ENDPOINT PIN                                                                                         | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|        |        |                                                                                                                  |                                                                                                      |              |            |                |          DELAY |        DELAY |
++--------+--------+------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1  | -3.518 | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0/C | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]/D |           10 |         32 |          6.796 |          3.686 |        3.110 |
+| Path2  | -3.477 | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111111]__0/C | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]/D |            9 |         27 |          6.802 |          3.554 |        3.248 |
+| Path3  | -3.453 | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0/C | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]/D |            9 |         32 |          6.731 |          3.460 |        3.271 |
+| Path4  | -3.439 | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111105]__0/C | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]/D |            9 |         30 |          6.717 |          3.648 |        3.069 |
+| Path5  | -3.423 | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0/C | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]/D |           10 |         32 |          6.701 |          3.591 |        3.110 |
+| Path6  | -3.419 | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111109]__0/C | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]/D |            8 |         31 |          6.697 |          3.372 |        3.325 |
+| Path7  | -3.407 | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0/C | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[16]/D |           10 |         32 |          6.685 |          3.575 |        3.110 |
+| Path8  | -3.405 | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111106]__0/C | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]/D |            9 |         29 |          6.683 |          3.355 |        3.328 |
+| Path9  | -3.404 | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0/C | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[13]/D |            9 |         32 |          6.682 |          3.572 |        3.110 |
+| Path10 | -3.404 | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111108]__0/C | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]/D |           10 |         33 |          6.729 |          3.793 |        2.936 |
++--------+--------+------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                                                    | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111111]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_44            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__17        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_29__20        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111105]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_8             | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111109]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_26__4         | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_3             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[16]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111106]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_36            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__12        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_47        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[18]_i_32            | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[13]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111108]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_16             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_13         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_2              | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_6              | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_1          | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                                                    | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111111]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_44            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__17        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_29__20        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111105]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_8             | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111109]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_26__4         | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_3             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[16]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111106]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_36            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__12        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_47        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[18]_i_32            | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[13]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111108]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_16             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_13         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_2              | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_6              | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_1          | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                                                    | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111111]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_44            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__17        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_29__20        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111105]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_8             | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111109]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_26__4         | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_3             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[16]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111106]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_36            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__12        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_47        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[18]_i_32            | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[13]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111108]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_16             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_13         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_2              | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_6              | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_1          | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                                                    | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111111]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_44            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__17        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_29__20        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111105]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_8             | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111109]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_26__4         | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_3             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[16]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111106]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_36            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__12        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_47        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[18]_i_32            | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[13]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111108]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_16             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_13         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_2              | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_6              | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_1          | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                                                    | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111111]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_44            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__17        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_29__20        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111105]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_8             | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111109]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_26__4         | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_3             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[16]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111106]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_36            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__12        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_47        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[18]_i_32            | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[13]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111108]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_16             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_13         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_2              | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_6              | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_1          | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path6 Cells                                                                                                    | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111111]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_44            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__17        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_29__20        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111105]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_8             | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111109]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_26__4         | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_3             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[16]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111106]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_36            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__12        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_47        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[18]_i_32            | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[13]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111108]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_16             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_13         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_2              | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_6              | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_1          | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path7 Cells                                                                                                    | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111111]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_44            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__17        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_29__20        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111105]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_8             | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111109]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_26__4         | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_3             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[16]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111106]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_36            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__12        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_47        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[18]_i_32            | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[13]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111108]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_16             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_13         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_2              | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_6              | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_1          | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path8 Cells                                                                                                    | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111111]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_44            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__17        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_29__20        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111105]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_8             | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111109]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_26__4         | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_3             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[16]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111106]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_36            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__12        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_47        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[18]_i_32            | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[13]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111108]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_16             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_13         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_2              | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_6              | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_1          | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path9 Cells                                                                                                    | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111111]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_44            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__17        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_29__20        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111105]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_8             | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111109]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_26__4         | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_3             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[16]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111106]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_36            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__12        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_47        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[18]_i_32            | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[13]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111108]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_16             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_13         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_2              | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_6              | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_1          | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path10 Cells                                                                                                   | Primitive Type       |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111111]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_44            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__17        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_29__20        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_4             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111105]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_25            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_8             | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111109]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_26__4         | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_3             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[16]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111106]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_36            | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_40__12        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_47        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[18]_i_32            | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_12        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111107]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_34            | LUT.others.LUT2      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_30__10        | LUT.others.LUT6      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[15]_i_17            | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[11]_i_2             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[13]             | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/p_reg_reg[-1111111108]__0 | FLOP_LATCH.flop.FDRE |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_16             | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_13         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_13        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_10        | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_2              | LUT.others.LUT3      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg[7]_i_6              | LUT.others.LUT4      |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[7]_i_1          | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[11]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[15]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[18]_i_1         | CARRY.others.CARRY4  |
+    | mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/m_reg_reg[17]             | FLOP_LATCH.flop.FDRE |
+    +----------------------------------------------------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== Place & Route Vivado Reports
+================================================================
++--------------------------+------------------------------------------------------------------------+
+| Report Type              | Report Location                                                        |
++--------------------------+------------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/match_template_design_analysis_routed.rpt          |
+| failfast                 | impl/verilog/report/match_template_failfast_routed.rpt                 |
+| power                    | impl/verilog/report/match_template_power_routed.rpt                    |
+| status                   | impl/verilog/report/match_template_status_routed.rpt                   |
+| timing                   | impl/verilog/report/match_template_timing_routed.rpt                   |
+| timing_paths             | impl/verilog/report/match_template_timing_paths_routed.rpt             |
+| utilization              | impl/verilog/report/match_template_utilization_routed.rpt              |
+| utilization_hierarchical | impl/verilog/report/match_template_utilization_hierarchical_routed.rpt |
++--------------------------+------------------------------------------------------------------------+
+
+

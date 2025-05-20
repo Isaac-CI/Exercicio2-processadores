@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+make[1]: Entering directory '/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/csim/build'
+   Compiling ../../../../tb/testbench.cpp in debug mode
+   Compiling ../../../../src/match_template.cpp in debug mode
+   Generating csim.exe
+make[1]: Leaving directory '/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/csim/build'
+Melhor correspondência em: (113, 123) com valor 64
+Imagem anotada salva como output_marked.png
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

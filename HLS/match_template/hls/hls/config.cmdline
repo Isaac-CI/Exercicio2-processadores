@@ -1,0 +1,4 @@
+part=xc7s25csga324-1
+relativeroot=/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template
+original_argv=--mode hls --config /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg --impl --work_dir hls --part xc7s25csga324-1 
+

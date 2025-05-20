@@ -1,0 +1,164 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Tue May 20 06:15:46 2025
+| Host         : ANV-15 running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/match_template_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7s25csga324-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------------------------------------------+------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                            Instance                            |                                 Module                                 | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++----------------------------------------------------------------+------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| bd_0_wrapper                                                   |                                                                  (top) |       3861 |       3861 |       0 |    0 | 3380 |      0 |      0 |         80 |
+|   bd_0_i                                                       |                                                                   bd_0 |       3861 |       3861 |       0 |    0 | 3380 |      0 |      0 |         80 |
+|     hls_inst                                                   |                                                        bd_0_hls_inst_0 |       3861 |       3861 |       0 |    0 | 3380 |      0 |      0 |         80 |
+|       (hls_inst)                                               |                                                        bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|       inst                                                     |                                         bd_0_hls_inst_0_match_template |       3861 |       3861 |       0 |    0 | 3380 |      0 |      0 |         80 |
+|         (inst)                                                 |                                         bd_0_hls_inst_0_match_template |        864 |        864 |       0 |    0 | 2010 |      0 |      0 |         36 |
+|         control_s_axi_U                                        |                           bd_0_hls_inst_0_match_template_control_s_axi |         89 |         89 |       0 |    0 |   25 |      0 |      0 |          0 |
+|         flow_control_loop_pipe_U                               |                  bd_0_hls_inst_0_match_template_flow_control_loop_pipe |          3 |          3 |       0 |    0 |    1 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_18_4_1_U101                       |             bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1 |          9 |          9 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_123 |          9 |          9 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U38                        |           bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_0 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_122 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U40                        |           bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_1 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_121 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U42                        |           bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_2 |          3 |          3 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_120 |          3 |          3 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U44                        |           bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_3 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_119 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U46                        |           bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_4 |          4 |          4 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_118 |          4 |          4 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U48                        |           bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_5 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_117 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U50                        |           bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_6 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_116 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U51                        |           bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_7 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_115 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U53                        |           bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_8 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_114 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U54                        |           bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_9 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_113 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U56                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_10 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_112 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U58                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_11 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_111 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U60                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_12 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_110 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U62                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_13 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_109 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U64                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_14 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_108 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U66                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_15 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_107 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U67                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_16 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_106 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U69                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_17 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_105 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U70                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_18 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_104 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U72                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_19 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_103 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U74                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_20 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_102 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U76                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_21 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_101 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U78                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_22 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U | bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_100 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U80                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_23 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_99 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U82                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_24 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_98 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U83                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_25 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_97 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U85                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_26 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_96 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U86                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_27 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_95 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U88                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_28 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_94 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U90                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_29 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_93 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U92                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_30 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_92 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U94                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_31 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_91 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U96                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_32 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_90 |          2 |          2 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U98                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_33 |          1 |          1 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_89 |          1 |          1 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_18_4_1_U99                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_34 |          9 |          9 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U |     bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0 |          9 |          9 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_19_4_1_U100                       |             bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1 |          1 |          1 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_88 |          1 |          1 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_19_4_1_U39                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_35 |          4 |          4 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_87 |          4 |          4 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_19_4_1_U41                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_36 |          3 |          3 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_86 |          3 |          3 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_19_4_1_U43                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_37 |          3 |          3 |       0 |    0 |    0 |      0 |      0 |          1 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_85 |          3 |          3 |       0 |    0 |    0 |      0 |      0 |          1 |
+|         mac_muladd_9s_9s_18s_19_4_1_U45                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_38 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_84 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U47                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_39 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_83 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U49                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_40 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_82 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U52                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_41 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_81 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U55                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_42 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_80 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U57                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_43 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_79 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U59                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_44 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_78 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U61                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_45 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_77 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U63                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_46 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_76 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U65                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_47 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_75 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U68                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_48 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_74 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U71                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_49 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_73 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U73                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_50 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_72 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U75                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_51 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_71 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U77                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_52 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_70 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U79                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_53 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_69 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U81                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_54 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_68 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U84                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_55 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_67 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U87                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_56 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_66 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U89                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_57 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_65 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U91                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_58 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_64 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U93                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_59 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_63 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U95                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_60 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |  bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_62 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mac_muladd_9s_9s_18s_19_4_1_U97                        |          bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_61 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|           match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U |     bd_0_hls_inst_0_match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0 |        116 |        116 |       0 |    0 |   56 |      0 |      0 |          0 |
+|         mul_32ns_34ns_55_5_1_U1                                |                    bd_0_hls_inst_0_match_template_mul_32ns_34ns_55_5_1 |         22 |         22 |       0 |    0 |    0 |      0 |      0 |          4 |
++----------------------------------------------------------------+------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

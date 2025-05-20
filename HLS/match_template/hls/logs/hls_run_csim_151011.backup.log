@@ -1,0 +1,56 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-1921] Skipping unknown ini [hls] entry 'tb.file_csimflags=/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/tb/testbench.cpp, -I/tools/Xilinx/Vitis/2024.2/Vitis_Libraries/vision/L1/include -I ./ -D__SDSVHLS__ -std=c++0x' from /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg(11)
+WARNING: [HLS 200-1998] cannot find relative file path '-I/tools/Xilinx/Vitis/2024.2/Vitis_Libraries/vision/L1/include' in directory(s): /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/src/match_template.cpp' from /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg(5)
+INFO: [HLS 200-10] Adding design file '/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/src/match_template.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file_cflags=/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/src/match_template.cpp, -I /tools/Xilinx/Vitis/2024.2/Vitis_Libraries/vision/L1/include -I ./ -D__SDSVHLS__ -std=c++0x' from /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg(6)
+INFO: [HLS 200-1465] Applying ini 'syn.file_csimflags=/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/src/match_template.cpp, -I -I/tools/Xilinx/Vitis/2024.2/Vitis_Libraries/vision/L1/include -I ./ -D__SDSVHLS__ -std=c++0x' from /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/tb/testbench.cpp' from /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file '/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/tb/testbench.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file_cflags=/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/tb/testbench.cpp, -I/home/aanout/Documents/mestrado/exercicio_2/opencv/source/opencv-4.4.0/install/include/opencv4 -I/tools/Xilinx/Vitis/2024.2/Vitis_Libraries/vision/L1/include -I ./ -D__SDSVHLS__ -std=c++0x' from /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'syn.top=match_template' from /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'clock=3.3' from /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg(3)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.3ns.
+INFO: [HLS 200-1465] Applying ini 'cosim.ldflags=-L /home/aanout/Documents/mestrado/exercicio_2/opencv/source/opencv-4.4.0/install/lib -lopencv_imgcodecs -lopencv_imgproc -lopencv_core -lopencv_highgui -lopencv_flann -lopencv_features2d' from /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg(14)
+INFO: [HLS 200-1907] Replacing 'config_cosim -ldflags=-L /home/aanout/Documents/mestrado/exercicio_2/opencv/source/opencv-4.4.0/install/lib -lopencv_imgcodecs -lopencv_imgproc -lopencv_core -lopencv_highgui -lopencv_flann -lopencv_features2d' with 'config_sim -ldflags=-L /home/aanout/Documents/mestrado/exercicio_2/opencv/source/opencv-4.4.0/install/lib -lopencv_imgcodecs -lopencv_imgproc -lopencv_core -lopencv_highgui -lopencv_flann -lopencv_features2d' in current solution file
+INFO: [HLS 200-1465] Applying ini 'csim.ldflags=-L /home/aanout/Documents/mestrado/exercicio_2/opencv/source/opencv-4.4.0/install/lib -lopencv_imgcodecs -lopencv_imgproc -lopencv_core -lopencv_highgui -lopencv_flann -lopencv_features2d' from /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg(13)
+INFO: [HLS 200-1907] Replacing 'config_csim -ldflags=-L /home/aanout/Documents/mestrado/exercicio_2/opencv/source/opencv-4.4.0/install/lib -lopencv_imgcodecs -lopencv_imgproc -lopencv_core -lopencv_highgui -lopencv_flann -lopencv_features2d' with 'config_sim -ldflags=-L /home/aanout/Documents/mestrado/exercicio_2/opencv/source/opencv-4.4.0/install/lib -lopencv_imgcodecs -lopencv_imgproc -lopencv_core -lopencv_highgui -lopencv_flann -lopencv_features2d' in current solution file
+INFO: [HLS 200-1465] Applying ini 'sim.ldflags=-L /home/aanout/Documents/mestrado/exercicio_2/opencv/source/opencv-4.4.0/install/lib -lopencv_imgcodecs -lopencv_imgproc -lopencv_core -lopencv_highgui -lopencv_flann -lopencv_features2d' from /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg(18)
+INFO: [HLS 200-1465] Applying ini 'vivado.flow=impl' from /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg(16)
+INFO: [HLS 200-1465] Applying ini 'vivado.rtl=verilog' from /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls_config.cfg(17)
+INFO: [HLS 200-1465] Applying ini 'part=xc7s25csga324-1' from /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/config.cmdline(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7s25-csga324-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+make[1]: Entering directory '/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/csim/build'
+   Compiling ../../../../tb/testbench.cpp in debug mode
+make[1]: Leaving directory '/home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/csim/build'
+In file included from ../../../../tb/testbench.cpp:1:
+In file included from ../../../../tb/../src/match_template.hpp:4:
+In file included from /tools/Xilinx/Vitis/2024.2/Vitis_Libraries/vision/L1/include/common/xf_common.hpp:20:
+In file included from /tools/Xilinx/Vitis/2024.2/Vitis_Libraries/vision/L1/include/common/xf_structs.hpp:27:
+/tools/Xilinx/Vitis/2024.2/include/ap_axi_sdata.h:38:23: warning: variable templates are a C++14 extension [-Wc++14-extensions]
+constexpr std::size_t bitwidth = sizeof(T) * CHAR_BIT;
+                      ^
+/tools/Xilinx/Vitis/2024.2/include/ap_axi_sdata.h:54:23: warning: variable templates are a C++14 extension [-Wc++14-extensions]
+constexpr std::size_t bytewidth = (bitwidth<T> + CHAR_BIT - 1) / CHAR_BIT;
+                      ^
+../../../../tb/testbench.cpp:33:5: error: no matching function for call to 'match_template'
+    match_template(img_in, img_template, img_out, INPUT_HEIGHT, INPUT_WIDTH, TEMPLATE_HEIGHT, TEMPLATE_WIDTH, RESULT_HEIGHT, RESULT_WIDTH);
+    ^~~~~~~~~~~~~~
+../../../../tb/../src/match_template.hpp:21:6: note: candidate function not viable: no known conversion from 'xf::cv::Mat<XF_8UC1, 320, 389, XF_NPPC1>' to 'xf::cv::Mat<XF_8UC1, 0, 0, XF_NPPC1> &' for 1st argument
+void match_template(xf::cv::Mat<INPUT_TYPE, 0, 0, NPC1> &img_in,
+     ^
+2 warnings and 1 error generated.
+make[1]: *** [csim.mk:89: obj/testbench.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 4.04 seconds. Total CPU system time: 0.42 seconds. Total elapsed time: 4.11 seconds; peak allocated memory: 325.488 MB.

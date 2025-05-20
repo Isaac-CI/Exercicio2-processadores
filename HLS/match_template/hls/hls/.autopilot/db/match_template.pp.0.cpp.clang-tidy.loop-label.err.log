@@ -1,0 +1,4 @@
+6 warnings and 9 errors generated.
+Error while processing /home/aanout/Documents/mestrado/exercicio_2/HLS/match_template/hls/hls/.autopilot/db/match_template.pp.0.cpp.
+clang-tidy applied 61 of 61 suggested fixes.
+Suppressed 6 warnings (6 with check filters).

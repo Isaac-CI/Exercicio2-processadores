@@ -1,0 +1,6 @@
+
+Family       : spartan7
+Device       : xc7s25
+Package      : -csga324
+Speed Grade  : -1
+Clock Period : 3.3

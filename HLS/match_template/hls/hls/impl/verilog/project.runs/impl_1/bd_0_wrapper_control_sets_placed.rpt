@@ -1,0 +1,222 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Tue May 20 06:16:35 2025
+| Host         : ANV-15 running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7s25
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   144 |
+|    Minimum number of control sets                        |   144 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   583 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   144 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |    16 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     2 |
+| >= 16              |   124 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            4 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             118 |           45 |
+| Yes          | No                    | No                     |            3281 |         1046 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              18 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+--------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------+----------------+--------------+
+| Clock Signal |                                                             Enable Signal                                                            |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+--------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------+----------------+--------------+
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/ar_hs                                                                                           | bd_0_i/hls_inst/inst/control_s_axi_U/rdata[9]_i_1_n_0 |                1 |              4 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mul_32ns_34ns_55_5_1_U1/ap_block_pp0_stage10_11001                                                              |                                                       |                2 |              7 |         3.50 |
+|  ap_clk      |                                                                                                                                      |                                                       |                4 |              8 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U52/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                3 |              9 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U59/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                4 |              9 |         2.25 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U61/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                3 |              9 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U95/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                6 |              9 |         1.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U63/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                6 |              9 |         1.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                4 |              9 |         2.25 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U91/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                6 |              9 |         1.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                3 |              9 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U47/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                3 |              9 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U68/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                5 |              9 |         1.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                4 |              9 |         2.25 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_block_pp0_stage72_11001                                                                                      |                                                       |                3 |              9 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U79/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                5 |              9 |         1.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U77/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                5 |              9 |         1.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                6 |              9 |         1.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/indvar_flatten2_fu_8208_out                                                                                     | bd_0_i/hls_inst/inst/flow_control_loop_pipe_U/SR[0]   |                3 |             14 |         4.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_block_pp0_stage1_11001                                                                                       |                                                       |                6 |             15 |         2.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_18_4_1_U46/match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U/E[0]                       |                                                       |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/reg_1260                                                                                                        |                                                       |                6 |             16 |         2.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/reg_1180                                                                                                        |                                                       |                5 |             16 |         3.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/E[0]                                                                                            |                                                       |                2 |             16 |         8.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_86_reg_48680                                                                                           |                                                       |                4 |             18 |         4.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_31_reg_37920                                                                                           |                                                       |                7 |             18 |         2.57 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_29_reg_37390                                                                                           |                                                       |                4 |             18 |         4.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_80_reg_47470                                                                                           |                                                       |                7 |             18 |         2.57 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_26_reg_36810                                                                                           |                                                       |                5 |             18 |         3.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_84_reg_48050                                                                                           |                                                       |                5 |             18 |         3.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_24_reg_36230                                                                                           |                                                       |                6 |             18 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_19_reg_35650                                                                                           |                                                       |                7 |             18 |         2.57 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_18_reg_35330                                                                                           |                                                       |                6 |             18 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_35_reg_38500                                                                                           |                                                       |                6 |             18 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_91_reg_49580                                                                                           |                                                       |                6 |             18 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_13_reg_34380                                                                                           |                                                       |                7 |             18 |         2.57 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_11_reg_33750                                                                                           |                                                       |                8 |             18 |         2.25 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_92_reg_49680                                                                                           |                                                       |                5 |             18 |         3.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_16_reg_35070                                                                                           |                                                       |                5 |             18 |         3.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_49_reg_40980                                                                                           |                                                       |                6 |             18 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_65_reg_44620                                                                                           |                                                       |                5 |             18 |         3.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_68_reg_45200                                                                                           |                                                       |                3 |             18 |         6.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_62_reg_43930                                                                                           |                                                       |                5 |             18 |         3.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_60_reg_43300                                                                                           |                                                       |                7 |             18 |         2.57 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_56_reg_42720                                                                                           |                                                       |                4 |             18 |         4.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_54_reg_42190                                                                                           |                                                       |                4 |             18 |         4.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_51_reg_41610                                                                                           |                                                       |                6 |             18 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_73_reg_45780                                                                                           |                                                       |                7 |             18 |         2.57 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_67_reg_44880                                                                                           |                                                       |                7 |             18 |         2.57 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_75_reg_46360                                                                                           |                                                       |                4 |             18 |         4.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_43_reg_40400                                                                                           |                                                       |                5 |             18 |         3.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_78_reg_46940                                                                                           |                                                       |                8 |             18 |         2.25 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_42_reg_40080                                                                                           |                                                       |                7 |             18 |         2.57 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_40_reg_39820                                                                                           |                                                       |                9 |             18 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_7_reg_33170                                                                                            |                                                       |                5 |             18 |         3.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_37_reg_39130                                                                                           |                                                       |                6 |             18 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_18_4_1_U64/match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U/ap_block_pp0_stage43_11001 |                                                       |                5 |             18 |         3.60 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_61_reg_43720                                                                                           |                                                       |                5 |             19 |         3.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_27_reg_37180                                                                                           |                                                       |                6 |             19 |         3.17 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_30_reg_37760                                                                                           |                                                       |                7 |             19 |         2.71 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_32_reg_38290                                                                                           |                                                       |                7 |             19 |         2.71 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U39/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/ap_block_pp0_stage5_11001  |                                                       |                5 |             19 |         3.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_36_reg_38920                                                                                           |                                                       |                4 |             19 |         4.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_38_reg_39550                                                                                           |                                                       |                5 |             19 |         3.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_41_reg_40240                                                                                           |                                                       |                6 |             19 |         3.17 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_50_reg_41450                                                                                           |                                                       |                7 |             19 |         2.71 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_52_reg_41980                                                                                           |                                                       |                7 |             19 |         2.71 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_55_reg_42560                                                                                           |                                                       |                5 |             19 |         3.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_57_reg_43090                                                                                           |                                                       |                7 |             19 |         2.71 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_3_reg_32430                                                                                            |                                                       |                6 |             19 |         3.17 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_63_reg_44350                                                                                           |                                                       |                3 |             19 |         6.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_66_reg_45040                                                                                           |                                                       |                5 |             19 |         3.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_6_reg_33010                                                                                            |                                                       |                7 |             19 |         2.71 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_74_reg_46200                                                                                           |                                                       |                6 |             19 |         3.17 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_76_reg_46730                                                                                           |                                                       |                5 |             19 |         3.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_79_reg_47310                                                                                           |                                                       |                9 |             19 |         2.11 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_90_reg_49630                                                                                           |                                                       |                6 |             19 |         3.17 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_8_reg_33540                                                                                            |                                                       |                4 |             19 |         4.75 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_81_reg_47840                                                                                           |                                                       |                5 |             19 |         3.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_85_reg_48470                                                                                           |                                                       |                5 |             19 |         3.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_12_reg_34170                                                                                           |                                                       |                5 |             19 |         3.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/img_template_data_empty_n_0[0]                                                                  |                                                       |                6 |             19 |         3.17 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_14_reg_34800                                                                                           |                                                       |                3 |             19 |         6.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_17_reg_35490                                                                                           |                                                       |                7 |             19 |         2.71 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_1_reg_31900                                                                                            |                                                       |                5 |             19 |         3.80 |
+|  ap_clk      | bd_0_i/hls_inst/inst/add_ln28_25_reg_36650                                                                                           |                                                       |                6 |             19 |         3.17 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_18_4_1_U56/match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U/E[0]                       |                                                       |                5 |             20 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_18_4_1_U40/match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U/E[0]                       |                                                       |                5 |             20 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_18_4_1_U88/match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U/E[0]                       |                                                       |                5 |             20 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_block_pp0_stage88_11001                                                                                      |                                                       |                5 |             20 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_block_pp0_stage13_11001                                                                                      |                                                       |                5 |             20 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_block_pp0_stage69_11001                                                                                      |                                                       |                5 |             20 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_18_4_1_U72/match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U/E[0]                       |                                                       |                5 |             20 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_block_pp0_stage63_11001                                                                                      |                                                       |                5 |             20 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_block_pp0_stage19_11001                                                                                      |                                                       |                5 |             20 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_18_4_1_U69/match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U/E[0]                       |                                                       |                5 |             20 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_block_pp0_stage38_11001                                                                                      |                                                       |                5 |             20 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_block_pp0_stage44_11001                                                                                      |                                                       |                5 |             20 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_block_pp0_stage94_11001                                                                                      |                                                       |                5 |             20 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/control_s_axi_U/p_7_in                                                                                          |                                                       |                5 |             20 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_18_4_1_U53/match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U/E[0]                       |                                                       |                5 |             20 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_block_pp0_stage7_11001                                                                                       |                                                       |                6 |             21 |         3.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_block_pp0_stage32_11001                                                                                      |                                                       |                6 |             21 |         3.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_block_pp0_stage82_11001                                                                                      |                                                       |                6 |             21 |         3.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_block_pp0_stage57_11001                                                                                      |                                                       |                6 |             21 |         3.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U41/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/ap_block_pp0_stage8_11001  |                                                       |                6 |             22 |         3.67 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_18_4_1_U42/match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U/E[0]                       |                                                       |                6 |             23 |         3.83 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_18_4_1_U74/match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U/E[0]                       |                                                       |                6 |             23 |         3.83 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                9 |             28 |         3.11 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |               11 |             28 |         2.55 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U55/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |                8 |             28 |         3.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U97/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |               12 |             30 |         2.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U65/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |               12 |             30 |         2.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U81/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |               10 |             30 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U49/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |               12 |             30 |         2.50 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |               11 |             31 |         2.82 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U73/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |               11 |             31 |         2.82 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U89/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/E[0]                       |                                                       |               13 |             31 |         2.38 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_18_4_1_U85/match_template_mac_muladd_9s_9s_18s_18_4_1_DSP48_0_U/E[0]                       |                                                       |                9 |             38 |         4.22 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U87/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2960_ce             |                                                       |               12 |             47 |         3.92 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U84/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2938_ce             |                                                       |               16 |             47 |         2.94 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U75/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2871_ce             |                                                       |               13 |             47 |         3.62 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U91/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2990_ce             |                                                       |               16 |             47 |         2.94 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U77/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2886_ce             |                                                       |               15 |             47 |         3.13 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U79/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2901_ce             |                                                       |               19 |             47 |         2.47 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U81/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2916_ce             |                                                       |               14 |             47 |         3.36 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U73/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2856_ce             |                                                       |               15 |             47 |         3.13 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U71/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2841_ce             |                                                       |               14 |             47 |         3.36 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U68/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2819_ce             |                                                       |               15 |             47 |         3.13 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U52/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2700_ce             |                                                       |               16 |             47 |         2.94 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U49/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2678_ce             |                                                       |               16 |             47 |         2.94 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U47/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2663_ce             |                                                       |               14 |             47 |         3.36 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U45/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2648_ce             |                                                       |               16 |             47 |         2.94 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U65/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2797_ce             |                                                       |               15 |             47 |         3.13 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U63/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2782_ce             |                                                       |               17 |             47 |         2.76 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U61/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2767_ce             |                                                       |               15 |             47 |         3.13 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U59/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2752_ce             |                                                       |               16 |             47 |         2.94 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U57/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2737_ce             |                                                       |               16 |             47 |         2.94 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U55/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2722_ce             |                                                       |               14 |             47 |         3.36 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U97/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_3035_ce             |                                                       |               16 |             47 |         2.94 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U95/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_3020_ce             |                                                       |               15 |             47 |         3.13 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U93/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_3005_ce             |                                                       |               14 |             47 |         3.36 |
+|  ap_clk      | bd_0_i/hls_inst/inst/mac_muladd_9s_9s_18s_19_4_1_U89/match_template_mac_muladd_9s_9s_18s_19_4_1_DSP48_0_U/grp_fu_2975_ce             |                                                       |               17 |             47 |         2.76 |
+|  ap_clk      |                                                                                                                                      | bd_0_i/hls_inst/inst/control_s_axi_U/ap_rst_n_inv     |               45 |            118 |         2.62 |
++--------------+--------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+------------------+----------------+--------------+
+
+

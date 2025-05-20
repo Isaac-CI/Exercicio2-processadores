@@ -1,0 +1,20 @@
+{
+    "0": {
+        "name": "match_template",
+        "file": "match_template.cpp",
+        "fileloc": "3",
+        "instructions": "974",
+        "total_instructions": "974",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

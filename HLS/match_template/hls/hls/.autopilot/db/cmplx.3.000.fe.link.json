@@ -1,0 +1,44 @@
+{
+  "0": {
+    "basicblocks": 25,
+    "calls": "3 2 1",
+    "file": "match_template.cpp",
+    "fileloc": 3,
+    "instructions": 86,
+    "loads": {
+      "L": 1
+    },
+    "name": "match_template",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 141
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 552,
+    "instructions": 4,
+    "name": "write<2, nullptr>",
+    "total_instructions": 8
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 541,
+    "instructions": 4,
+    "name": "read<2, nullptr>",
+    "total_instructions": 10
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "xf_structs.hpp",
+    "fileloc": 541,
+    "instructions": 4,
+    "name": "read<2, nullptr>",
+    "total_instructions": 10
+  }
+}

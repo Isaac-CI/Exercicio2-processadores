@@ -1,0 +1,5 @@
+#define XF_HEIGHT 1080
+#define XF_WIDTH 1920
+#define XF_NPPC XF_NPPC1
+#define XF_CV_DEPTH_IN 2
+#define XF_CV_DEPTH_OUT 2
